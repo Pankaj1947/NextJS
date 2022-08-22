@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 
-const userid = ({data}) => {
-  const {id,name,username,email,website,address}=data;
+const userid = ({ data }) => {
+  const { id, name, username, email, website, address } = data;
   return (
     <>
       <Head>
@@ -44,7 +44,7 @@ export const getStaticPaths = async () => {
 
 
 export const getStaticProps = async (context) => {
-  const id=context.params.userid;
+  const id = context.params.userid;
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
   const data = await res.json();
 

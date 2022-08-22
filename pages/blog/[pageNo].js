@@ -50,7 +50,8 @@ const myData = ({ data }) => {
 
 export default myData;
 
-// What will happend if the file is already exist in our folder and we tried to call the pages dynamic route ?
+// What will happend if the file is already exist in our folder 
+//and we tried to call the pages dynamic route ?
 
 // Which page will be serve by the next.js app?
 
